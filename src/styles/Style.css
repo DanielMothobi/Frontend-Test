@@ -1,0 +1,266 @@
+
+
+*, *:before, *:after{
+	font-family: sans-serif;
+	box-sizing: inherit;
+ }
+
+ html {
+  box-sizing: border-box;
+}
+
+ .parent-div{
+ 	width: 80%;
+ 	height: 600px;
+ 	background: #fff; 
+ 	border-radius: 30px;
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	font-size: 0;
+
+ 	/*---smooth box shadow---*/
+
+ 	box-shadow:
+  		0px 0px 1.6px rgba(0, 0, 0, 0.012),
+  		0px 0px 3.6px rgba(0, 0, 0, 0.017),
+  		0px 0px 6.3px rgba(0, 0, 0, 0.021),
+  		0px 0px 10px rgba(0, 0, 0, 0.025),
+  		0px 0px 15.5px rgba(0, 0, 0, 0.029),
+  		0px 0px 24.1px rgba(0, 0, 0, 0.033),
+  		0px 0px 40px rgba(0, 0, 0, 0.038),
+  		0px 0px 80px rgba(0, 0, 0, 0.05)
+ }
+
+ .inner-left-container {
+
+ 	width: 40%;
+ 	height: 100%;
+ 	background: #ffd300;  /* --- yellow ----*/
+ 	border-radius: 30px 0 0 30px;
+ 	margin-right: 0;
+
+ }
+
+ .face-image {
+ 	margin: auto;
+ }
+
+ .face-image img{
+ 	width: 130px;
+ 	height: 130px;
+ 	align-content: center;
+ 	align-items: center;
+ 	margin-top: 80px;
+ 	margin-bottom: 10px;
+ 	max-width: 100%;  /*  make the face image be responsive to changing div size  */
+ }
+
+ .profile-content h3{
+ 	text-align: center;
+ 	color: #373d40; /* --- charcoal grey ----*/
+ 	font-size: 24px;
+ 	padding-top: 20px;
+ }
+
+ .profile-content p{
+ 	color: #373d40; /* --- charcoal grey ----*/
+ 	font-size: 14px;
+ 	text-align: center;
+ 	padding-left: 30px;
+ 	padding-right: 30px;
+
+ }
+ 
+ .profile-content p a{
+ 	text-decoration: none;
+ 	color: #373d40; /* --- charcoal grey ----*/
+ 	font-style: italic;
+ 	transition: .2s;
+ }
+
+ .profile-content p a:hover{
+ 	color: #ff9200; /* --- tangerine ----*/
+ 	transition-timing-function: all .3s ease-in-out .2s;
+ }
+
+ .arrow-btn {
+ 	width: 50px;
+ 	height: 50px;
+ 	margin-top: 100px;
+ 	background-color: #373d40; /* --- charcoal grey ----*/
+ 	border-radius: 50%;
+ 	cursor: pointer;
+ 	transition: .2s;
+ }
+
+ .arrow-btn:hover {
+ 	background-color: #454a4d; /* --- lighter shade of charcoal grey ----*/
+ 	transition: .2s;
+ 	transition-timing-function: all .3s ease-in-out .2s;
+ }
+
+ .arrow-btn img{
+ 	position: relative;
+ 	top: 20%;
+ 	left: 5%;
+ }
+
+ .inner-right-container {
+ 	width: 60%;
+ 	height: 100%;
+ 	background: #fff; /* --- white ----*/
+ 	border-radius: 0 30px 30px 0;
+ }
+
+ .inner-left-container, .inner-right-container {
+ 	display: inline-block;
+ 	vertical-align: middle;
+ }
+
+ /* ------------- Form ---------------*/
+
+ .inner-right-container label{
+ 	display: inline-block;
+ 	color: #373d40; /* --- charcoal grey ----*/
+ 	font-size: 12px;
+ 	width: 100px;
+ 	margin: 10px;
+ 	margin-top: -10px;
+ }
+
+ input{
+
+ 	height: 40px;
+ 	width: 300px;
+ 	max-width: 100%;
+ 	margin-bottom: 20px;
+ 	border: none;
+ 	background: #f5f8f9; /* --- pale grey ----*/
+ 	padding-left: 10px;
+ 	padding-right: 5px;
+ 	cursor: pointer;
+ 	border-radius: 4px;
+ }
+
+ form {
+ 	margin-top: -50px;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(15%, 30%);
+ }
+
+ .gender{
+ 	display: inline-block;
+ 	vertical-align: middle;
+ }
+
+ .gender-btn{
+ 	vertical-align: middle;
+ 	width: 40px;
+ 	height: 40px;
+ 	border-radius: 50%;
+ 	background-color: #f5f8f9;  /* --- pale grey ----*/
+ 	cursor: pointer;
+ }
+
+ .membership {
+ 	display: inline-block;
+ 	vertical-align: middle;
+ }
+
+ .member-ship-btn{
+ 	vertical-align: middle;
+ 	width: 40px;
+ 	height: 40px;
+ 	border-radius: 50%;
+ 	background-color: #f5f8f9;  /* --- pale grey ----*/
+ 	cursor: pointer;
+ }
+
+ .membership-form-group p{
+ 	color: #b2c0ce;  /* --- pale grey ----*/
+ 	padding-left: 10px;
+ 	padding-right: 27px;
+ 	font-size: 12px;
+ }
+
+ .gender-form-group p{
+ 	color: #b2c0ce;  
+ 	padding-left: 10px;
+ 	padding-right: 27px;
+ 	font-size: 12px;
+ }
+
+ .gender-form-group{
+ 	margin-bottom: 20px;
+ }
+
+/* .gloudy-blue{
+ 	background-color: #cad7dd; /* --- gloudy-blue ----
+ }*/
+
+ .membership img, .gender img{
+ 	display: block;
+ 	width: 30px;
+ 	height: 30px;
+ 	padding-top: 12px;
+ 	margin-left: auto;
+  	margin-right: auto;
+ }
+
+/* .gender img{
+ 	display: block;
+ 	width: 40px;
+ 	height: 40px;
+ 	padding-top: 15px;
+ 	margin-left: auto;
+  margin-right: auto;
+ }*/
+
+ .custom-btn {
+ 	margin-top: 40px;
+ 	width: 100px;
+ 	height: 40px;
+ 	border: none;
+ 	border-radius: 4px;
+ 	font-size: 12px;
+ 	cursor: pointer;
+
+ }
+
+ .cancel-btn{
+ 	margin-right: 20px;
+ 	color: #373d40; /* --- charcoal grey ----*/
+ 	background-color: #f5f8f9;  /* --- pale grey ----*/
+ 	margin-left: 30%;
+ 	transition: .4s;
+ }
+
+ .cancel-btn:hover{
+ 	background: #d6d8d9; /* --- darker pale grey ----*/
+ 	transition: .4s;
+ 	transition-timing-function: all .4s ease-in-out .4s;
+ }
+
+  .submit-btn{
+ 	color: #fff;
+ 	background-color: #49c8a8;  /* --- gloudy blue ----*/
+ 
+ }
+
+ .submit-btn:hover{
+ 	background: #28a183; /* --- darker shade pale grey ----*/
+ 	transition: .4s;
+ 	transition-timing-function: all .4s ease-in-out .4s;
+ }
+
+
+
+ /* ------ the end !!! -------- */
+
+
+
+
+
